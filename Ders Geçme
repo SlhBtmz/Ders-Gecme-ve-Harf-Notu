@@ -1,0 +1,44 @@
+print ("****************************************")
+print ("Not ortalamasi ve ders geçme harf notunu hesaplayan yazilim\n")
+ara=int(input("Lütfen arasinav notunu giriniz:"))
+odev=int(input("Lütfen odev notunu giriniz:"))
+final=int(input("Lütfen final notunu giriniz:"))
+
+
+ortalama=ara*0.3+odev*0.3+final*0.4
+
+print("\nortalama: " + str(ortalama))
+
+if ortalama >=85 and ortalama <=100:
+    print ("Ders Geçme Harf Notunuz: AA")
+elif ortalama >=75 and ortalama <=84:
+    print ("Ders Geçme Harf Notunuz: BA")
+elif ortalama >=65 and ortalama <=74:
+    print ("Ders Geçme Harf Notunuz: BB")
+elif ortalama >= 55 and ortalama <=64:
+    print ("Ders Geçme Harf Notunuz: CB")
+elif ortalama >=50 and ortalama <=54:
+    print ("Ders Geçme Harf Notunuz: CC")
+elif ortalama >=40 and ortalama <=49:
+    print ("Ders Geçme Harf Notunuz: DC")
+elif ortalama >=35 and ortalama <=39:
+    print ("Ders Geçme Harf Notunuz: DD")
+elif ortalama >=0 and ortalama <=34:
+    print ("Ders Geçme Harf Notunuz: FF")
+else: 
+    print("Girdiğiniz notlar 0-100 araliği dişindadir.")
+
+print ("****************************************")
+
+
+
+
+
+# AA     85 - 100
+# BA     75 - 84
+# BB     65 - 74
+# CB     55 - 64
+# CC     50 - 54
+# DC     40 - 49
+# DD     35 - 39
+# FF      0 - 34
